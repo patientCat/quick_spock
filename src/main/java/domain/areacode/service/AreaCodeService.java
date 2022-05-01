@@ -1,8 +1,6 @@
-package domain.service;
+package domain.areacode.service;
 
 import lombok.Data;
-
-import java.util.function.Predicate;
 
 /**
  * @author luke

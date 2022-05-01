@@ -1,4 +1,4 @@
-package domain.model;
+package domain.areacode.model;
 
 import com.google.common.base.Joiner;
 import com.google.common.collect.Lists;

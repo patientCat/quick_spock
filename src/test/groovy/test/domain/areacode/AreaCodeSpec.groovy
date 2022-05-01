@@ -1,15 +1,13 @@
 package test.domain.areacode
 
-import domain.model.AreaCodeAggregate
-import domain.model.AreaCodeModel
-import domain.model.AreaCodeQueryPatternSupport
+import domain.areacode.model.AreaCodeAggregate
+import domain.areacode.model.AreaCodeModel
+import domain.areacode.model.AreaCodeQueryPatternSupport
 import spock.lang.Specification
-import spock.lang.Subject
-import spock.lang.Unroll
 
 class AreaCodeSpec extends Specification{
     /**
-     * {@link domain.model.AreaCodeModel}
+     * {@link domain.areacode.model.AreaCodeModel}
      * @return
      */
     def "测试AreaCodeModel"(){
@@ -33,7 +31,7 @@ class AreaCodeSpec extends Specification{
     }
 
     /**
-     * {@link domain.model.AreaCodeModel}
+     * {@link domain.areacode.model.AreaCodeModel}
      * @return
      */
     def "测试AreaCodeModel with Where 标签"(){
@@ -52,13 +50,13 @@ class AreaCodeSpec extends Specification{
         "111111"  || true         | ""
         "101111"  || true         | ""
         "110111"  || true         | ""
-        "111011"  || true         | "1"
+        "111011"  || true         | ""
         "1111111" || null         | "非法的code"
         "11111"   || null         | "非法的code"
     }
 
     /**
-     * {@link domain.model.AreaCodeAggregate}
+     * {@link domain.areacode.model.AreaCodeAggregate}
      * @return
      */
     def "测试正则模糊查询"(){
